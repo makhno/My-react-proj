@@ -1,0 +1,17 @@
+1) WaitFor causes "MutationObserver is not a constructor while using waitFor"
+
+From https://frontend.turing.io/lessons/module-3/testing-asynchronous-react-rtl.html
+Seeing Errors?
+If you’re getting the error TypeError: MutationObserver is not a constructor while using waitFor, it’s not your fault.
+Depending on the day you are writing your test, the version of Jest that comes with create-react-app might be different from the version that React Testing Library expects you to have.
+Here is how to solve it for now:
+Run npm install --save-dev jest-environment-jsdom-sixteen to install a more recent version of Jest.
+Change the test script in the package.json file to be: "test": "react-scripts test --env=jest-environment-jsdom-sixteen"
+
+I also changed the run configuration in Intellij to add --env=jest-environment-jsdom-sixteen
+
+2) Example of testing with routing
+https://testing-library.com/docs/example-react-router
+
+3) waitFor example:
+await waitFor(() => { expect(container.querySelector("span#info_span")!.innerHTML).to.eq('cat') })

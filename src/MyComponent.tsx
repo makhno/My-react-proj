@@ -53,5 +53,3 @@ export default connect(
     null,
     { forwardRef : true }
 )(MyComponent);
-
-//export default MyComponent;

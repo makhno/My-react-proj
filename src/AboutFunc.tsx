@@ -24,7 +24,7 @@ const AboutFunc: React.FC = (props: any) => {
             <br/>
             <br/>
 
-            <input type="text" value={inpVal} onChange={handleInpValChange} />
+            <input id="input_box" type="text" value={inpVal} onChange={handleInpValChange} />
 
             <br/><br/>
             <button onClick={() => {

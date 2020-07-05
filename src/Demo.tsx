@@ -16,9 +16,9 @@ const Demo: React.FC = (props: any) => {
     //Equivalent of componentDidMount and componentWillUnmount
     //see https://stackoverflow.com/questions/44506207/reactjs-lifecycle-method-inside-a-function-component
     useEffect(() => {
-        console.log("Demo component componentDidMount equivalent");
+        console.log("Demo component componentDidMount equivalent")
         return () => {
-            console.log("Demo component componentWillUnmount equivalent");
+            console.log("Demo component componentWillUnmount equivalent")
         }
     }, []);
     return (
@@ -51,7 +51,7 @@ const Demo: React.FC = (props: any) => {
             <div>Received by parent from child: {messageFromChild}</div>
             <div>Animal in redux as seen by parent: {props.animal}</div>
         </div>
-    );
+    )
 }
 
 

@@ -61,7 +61,7 @@ export default function App() {
                         exact
                         path="/aboutCl"
                         render={() => (
-                            <AboutCl/>
+                            <AboutCl passedProp = "hello world"/>
                         )}
                     />
                 </Switch>
