@@ -2,7 +2,7 @@ import {createStore} from "redux"
 import {DUMMY_ACTION, SEND_MESSAGE} from "./Actions"
 
 const initialState = {
-    pet: "dog",
+    pet: "dog"
 }
 
 const reducer = (state = initialState, action:any) => {

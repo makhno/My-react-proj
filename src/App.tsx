@@ -52,7 +52,7 @@ export default function App() {
                         exact
                         path="/aboutFunc"
                         render={() => (
-                            <AboutFunc/>
+                            <AboutFunc passedProp = "hello world"/>
                         )}
                     />
                 </Switch>
@@ -76,5 +76,5 @@ export default function App() {
                 </Switch>
             </>
         </BrowserRouter>
-    );
+    )
 }
